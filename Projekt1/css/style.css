@@ -126,7 +126,7 @@ p {
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-    color: red;
+    color: cornflowerblue;
     background: black;
 }
 
@@ -286,7 +286,7 @@ p {
 #contact-form label {
     display: block;
     margin-bottom: 5px;
-    color: white;
+    color: black;
 }
 
 #contact-form input,
