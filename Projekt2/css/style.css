@@ -135,20 +135,20 @@ p {
     padding: 3rem 0;
 }
 
-/* Section  co děláme */
+/* Section co děláme */
 
 #what .items {
     display: flex;
     padding: 1rem;
 }
 
-#what .item {
+#what .items .item {
     text-align: center;
     padding: 1rem;
 }
 
-#what .items .item. i {
-    background: aqua;
+#what .items .item i {
+    background-color: aqua;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
