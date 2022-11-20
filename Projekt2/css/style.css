@@ -135,6 +135,51 @@ p {
     padding: 3rem 0;
 }
 
+
+.p-1 {
+    padding: 1.5rem 0;
+}
+
+.p-2 {
+    padding: 2rem 0;
+}
+
+.p-3 {
+    padding: 3rem 0;
+}
+
+.m-1 {
+    margin: 1.5rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.m-3 {
+    margin: 3rem;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333333;
+}
+
+.bg-dark {
+    background: #333333;
+    color: #fff
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444444 dotted 1px;
+}
+
 /* Section co děláme */
 
 #what .items {
@@ -152,4 +197,27 @@ p {
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+/* WHO */
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
+
+#who h3 {
+    text-align: center;
+}
+
+#who h2 {
+    text-align: center;
+}
+
+
+#who #who-img {
+    background: url("https://static.wikia.nocookie.net/geometry-dash/images/a/ae/Slaughterhouse.jpeg/revision/latest/scale-to-width-down/680?cb=20211107214352&path-prefix=es") no-repeat center center/cover;
 }
