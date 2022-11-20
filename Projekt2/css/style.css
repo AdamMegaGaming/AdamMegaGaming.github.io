@@ -12,6 +12,10 @@ body {
     color: aqua;
 }
 
+.bg-primary {
+    background: aqua;
+}
+
 p {
     margin: 0.75rem 0;
 }
@@ -137,15 +141,15 @@ p {
 
 
 .p-1 {
-    padding: 1.5rem 0;
+    padding: 1.5rem;
 }
 
 .p-2 {
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
 .p-3 {
-    padding: 3rem 0;
+    padding: 3rem;
 }
 
 .m-1 {
@@ -218,6 +222,57 @@ p {
 }
 
 
-#who #who-img {
-    background: url("https://static.wikia.nocookie.net/geometry-dash/images/a/ae/Slaughterhouse.jpeg/revision/latest/scale-to-width-down/680?cb=20211107214352&path-prefix=es") no-repeat center center/cover;
+#who .who-img {
+    background: url("../img/Slaughterhouse.webp") no-repeat center center/cover;
+}
+
+#images .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#images .item img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#contact {
+    display: flex;
+
+}
+
+#contact div {
+    flex: 1;
+
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+#contact .list li {
+    padding: 0.5rem 0;
+    border-bottom: #444444 dotted 1px;
+
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+#contact h3 {
+    margin-top: 3rem;
 }

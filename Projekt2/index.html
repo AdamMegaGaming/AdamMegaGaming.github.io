@@ -20,8 +20,8 @@
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#what">O nás</a></li>
-        <li><a href="#project">Projekt</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#what">Projekt</a></li>
+        <li><a href="#who">Kontakt</a></li>
     </ul>
 </nav>
 <div>
@@ -87,63 +87,103 @@
         </ul>
     </div>
 </section>
+
+<section id="images" class="py-1">
+    <div class="container">
+        <h2 class="m-heading text-center">
+            Ilustrační <span class="text-primary">Obrázky</span>
+        </h2>
+        <div class="items py-1">
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?rhythm"
+                     alt="Ilustrační obrázek">
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?song"
+                     alt="Ilustrační obrázek">
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?game"
+                     alt="Ilustrační obrázek">
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?build"
+                     alt="Ilustrační obrázek">
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/180x300/?platform"
+                     alt="Ilustrační obrázek">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+    <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Napište nám</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Jméno</label>
+                <input type="text"
+                        name="name"
+                        id="name"
+                        placeholder="sem pište">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text"
+                        name="name"
+                        id="email"
+                       placeholder="sem pište">
+            </div>
+            <div class="form-group">
+                <label for="phone">E-mail</label>
+                <input type="text"
+                        name="name"
+                        id="phone"
+                        placeholder="sem pište">
+            </div>
+            <div class="form-group">
+                <label for="message">Telefon</label>
+                <textarea name="message"
+                          id="message"
+                          placeholder="sem pište vaši zprávu"
+                          ></textarea>
+                <input type="submit" class="btn btn-dark"
+                       value="Odeslat">
+            </div>
+        </form>
+    </div>
+    <div class="contact-adress bg-dark p-2">
+        <h2 class="m-heading">Kontakt</h2>
+        <h3>Adresa provozovny</h3>
+        <ul>
+            <li>Ulice</li>
+            <li>Město</li>
+        </ul>
+        <h3>Email</h3>
+        <ul>
+            <li>email@gds.eu</li>
+        </ul>
+        <h3>Telefon</h3>
+        <ul>
+            <li>+420 607 844 127</li>
+        </ul>
+
+    </div>
+</section>
+
 <footer id="main-footer" class="bg-dark text-center py-1">
     <div class="container">
         <p>Copyright &copy; 2022, Geometry Dash Website</p>
     </div>
 </footer>
 
-<script>
-    // Smooth scrolling
-    $('#navbar a, .btn').on('click', function (event) {
-        if (this.hash !== '') {
-            event.preventDefault();
-            const hash = this.hash;
-            $('html, body').animate(
-                {
-                    scrollTop: $(hash).offset().top - 100
-                }, 800
-            )
-        }
-    })
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.html">
 
-
-    var nav_sections = $('section');
-    var main_nav = $('#navbar li, .mobile-nav');
-
-    $(window).on('scroll', function() {
-
-        var cur_pos = $(this).scrollTop() + 200;
-
-        // Menu Opacity on scrolling and hidding source
-
-        if (cur_pos > 350) {
-            document.querySelector('#navbar').style.opacity = 0.9;
-            document.querySelector('#showcase .source').style.display = "none";
-        }
-        else {
-            document.querySelector('#navbar').style.opacity = 1;
-            document.querySelector('#showcase .source').style.display = "block";
-        }
-
-        // Navigation active state on scroll
-
-        nav_sections.each(function() {
-            var top = $(this).offset().top,
-                bottom = top + $(this).outerHeight();
-
-            if (cur_pos >= top && cur_pos <= bottom) {
-                if (cur_pos <= bottom) {
-                    main_nav.find('a').removeClass('active');
-                }
-                main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-            }
-
-            if (cur_pos < 300) {
-                $("#navbar ul li a").removeClass('active');
-            }
-        });
-    });
 </script>
 </body>
 </html>
