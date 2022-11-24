@@ -255,16 +255,6 @@ p {
     display: block;
 }
 
-#contact list {
-    margin: 0.5rem 0;
-    list-style: none;
-}
-
-#contact .list li {
-    padding: 0.5rem 0;
-    border-bottom: #444444 dotted 1px;
-
-}
 
 #contact .contact-form input,
 #contact .contact-form textarea {
