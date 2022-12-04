@@ -59,6 +59,11 @@ p {
     border-radius: 5px;
 
 }
+
+#hambac {
+    display: none;
+}
+
 /* Showcase */
 #showcase {
     background: #333 url("https://i.redd.it/86yagye25g841.png");

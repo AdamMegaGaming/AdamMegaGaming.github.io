@@ -1,17 +1,26 @@
-// Smooth scrolling
+$('#navbar #hambac').click(function (){
+    $('#navbar ul').slideToggle("slow")
+});
+if($(window).width()<501){
+    $('#navbar ul').click(function (){
+        $('#navbar ul').hide();
+    });
+}
 $('#navbar a, .btn').on('click', function (event) {
     if (this.hash !== '') {
         event.preventDefault();
         const hash = this.hash;
         $('html, body').animate(
             {
-                scrollTop: $(hash).offset().top - 100
+                scrollTop: $(hash).offset().top - 260
             }, 800
         )
     }
 })
 
 
+
+// Navigation active state on scroll
 var nav_sections = $('section');
 var main_nav = $('#navbar li, .mobile-nav');
 
@@ -19,18 +28,16 @@ $(window).on('scroll', function() {
 
     var cur_pos = $(this).scrollTop() + 200;
 
-    // Menu Opacity on scrolling and hidding source
 
-    if (cur_pos > 350) {
-        document.querySelector('#navbar').style.opacity = 0.9;
-        document.querySelector('#showcase .source').style.display = "none";
-    }
-    else {
-        document.querySelector('#navbar').style.opacity = 1;
-        document.querySelector('#showcase .source').style.display = "block";
-    }
 
-    // Navigation active state on scroll
+    //if (cur_pos > 350) {
+    //document.querySelector('#navbar').style.opacity = 0.9;
+    // document.querySelector('#showcase .source').style.display = "none";
+    //}
+    //else {
+    //document.querySelector('#navbar').style.opacity = 1;
+    // document.querySelector('#showcase .source').style.display = "block";
+    // }
 
     nav_sections.each(function() {
         var top = $(this).offset().top,
@@ -47,4 +54,6 @@ $(window).on('scroll', function() {
             $("#navbar ul li a").removeClass('active');
         }
     });
+
+
 });
