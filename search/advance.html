@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <title>Advanced Search</title>
+</head>
+
+<body>
+<nav id="navbar">
+    <ul>
+        <li><a href="index.html">Hledat</a></li>
+        <li><a href="image.html">Obrázky</a></li>
+        <li><a class="current" href="advance.html">Rozšířené</a></li>
+    </ul>
+</nav>
+<section id="advanced">
+    <h1>Pokročilé vyhledávání</h1>
+    <div class="content text-primary">
+
+        <div class="labels">
+            <label for="all">Všechna tato slova: </label>
+            <label for="exact">Přesně toto slovo nebo sousloví:</label>
+            <label for="any">Kterékoliv z těchto slov: </label>
+            <label for="none">Žádné z těchto slov:</label>
+        </div>
+
+        <form action="https://google.com/search" class="inputs">
+            <input type="text" id="all" name="as_q">
+            <input type="text" id="exact" name="as_epq">
+            <input type="text" id="any" name="as_oq">
+            <input type="text" id="none" name="as_eq">
+            <input type="submit" value="Pokročilé hledání" class="button" id="advanced-button">
+        </form>
+
+    </div>
+</section>
+<footer>
+    <div class="footer text-primary">
+        <p>Copyright &copy; 2022 Adam Hrbáč</p>
+    </div>
+</footer>
+</body>
+</html>

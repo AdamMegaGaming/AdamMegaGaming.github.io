@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <title>Google Search</title>
+</head>
+
+<body>
+<nav id="navbar">
+    <ul>
+        <li><a class="current" href="index.html">Hledat</a></li>
+        <li><a href="image.html">Obrázky</a></li>
+        <li><a href="advance.html">Rozšířené</a></li>
+    </ul>
+</nav>
+<section id="main">
+    <h1><span id="google">Google</span></h1>
+    <form action="https://google.com/search">
+        <label for="searchbox"></label><input id="searchbox" type="text" name="q">
+        <div>
+            <input class="button" type="submit" value="Hledat">
+            <input class="buttonL" type="submit" value="Zkusím štěstí">
+        </div>
+    </form>
+</section>
+<footer>
+    <div class="footer text-primary">
+        <p>Copyright &copy; 2022 Adam Hrbáč</p>
+    </div>
+</footer>
+</body>
+</html>

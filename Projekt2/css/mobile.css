@@ -68,6 +68,25 @@
     #contact {
         flex-direction: column;
     }
+
+    #navbar #hambac {
+        display: block;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        display: none;
+    }
+
+    #navbar ul li {
+        padding: 0.5rem;
+    }
+
+    #navbar ul li:first-child {
+        margin-top: 0.8rem;
+        border-top: #f4f4f4 1px dotted;
+    }
 }
 
 @media screen and (max-height: 568px) {

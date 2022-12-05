@@ -57,7 +57,10 @@ p {
     background: white;
     color: #333333;
     border-radius: 5px;
+}
 
+#navbar #hambac {
+    display: none
 }
 
 #hambac {
