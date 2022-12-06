@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(`form`).onsubmit = () => {
+
+                const li = document.createElement(`li`);
+                li.innerHTML = document.querySelector(`#task`).value;
+                document.querySelector(`#ukoly`).append(li);
+
+                document.querySelector(`#task`).value = ``;
+                return false;
+            }
+        })
+
+    </script>
+</head>
+<body>
+<h1>Úkoly</h1>
+<ul id="ukoly"></ul>
+<form>
+    <input type="text"
+           name="task"
+           id="task"
+    autofocus autocomplete="off" placeholder="Zadej úkol">
+    <input type="submit"></input>
+</form>
+</body>
+</html>
